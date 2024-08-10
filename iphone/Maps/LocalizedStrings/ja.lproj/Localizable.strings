@@ -185,17 +185,11 @@
 /* resource for context menu */
 "edit" = "編集";
 
-/* Warning message when doing search around current position */
-"unknown_current_position" = "現在の座標が未確定です";
-
 /* Subject for emailed bookmark */
 "bookmark_share_email_subject" = "Organic Mapsでピン情報を確認";
 
 /* Subject for emailed position */
 "my_position_share_email_subject" = "Organic Mapsで現在地を確認";
-
-/* Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. */
-"share" = "共有";
 
 /* Share by email button text, also used in editor and About. */
 "email" = "Eメール";
@@ -217,8 +211,6 @@
 
 /* Length of track in cell that describes route */
 "length" = "距離";
-
-"share_my_location" = "現在地を共有する";
 
 "prefs_group_route" = "ナビゲーション";
 
@@ -540,7 +532,8 @@
 
 "search_not_found" = "該当するものは見つかりませんでした。";
 
-"search_not_found_query" = "条件を変えて検索してみてください。";
+/* The message when user did not find anything in the search. */
+"search_not_found_query" = "検索する地域をダウンロードするか、近隣の町村名を追加してみてください。";
 
 "search_history_title" = "検索履歴";
 
@@ -1130,6 +1123,10 @@
 "dialog_routing_rebuild_from_current_location_carplay" = "ルートは現在位置から再計算されます";
 
 "dialog_routing_rebuild_for_vehicle_carplay" = "車ルートに変更されます";
+
+"not_all_shown_bookmarks_carplay" = "すべてのブックマークが表示されるわけではない";
+
+"switch_to_phone_bookmarks_carplay" = "携帯電話に切り替えてすべてのブックマークを見る";
 
 "ok" = "OK";
 
@@ -2708,7 +2705,7 @@
 "type.natural.shingle" = "小石";
 
 /* A loose surface consisting of angular, sharp stones. Usually on a mountain slope and prone to landslides. */
-"type.natural.scree" = "石がゴロゴロしている";
+"type.natural.scree" = "がれ";
 
 "type.natural.bay" = "港湾";
 

@@ -358,6 +358,7 @@
 	<string name="dialog_routing_system_error">Erro de sistema</string>
 	<string name="dialog_routing_application_error">Não foi possível traçar uma rota devido a um erro no aplicativo.</string>
 	<string name="dialog_routing_try_again">Por favor, tente novamente</string>
+	<string name="not_now">Agora não</string>
 	<string name="dialog_routing_download_and_build_cross_route">Deseja baixar o mapa e traçar uma rota melhor, mas que se estenda por mais de um mapa?</string>
 	<string name="dialog_routing_download_cross_route">Baixe o mapa para traçar uma rota melhor que vai além dos limites desse mapa.</string>
 
@@ -371,7 +372,8 @@
 	<string name="categories">Categorias</string>
 	<string name="history">Histórico</string>
 	<string name="search_not_found">Sinto muito, nenhum resultado foi encontrado.</string>
-	<string name="search_not_found_query">Por favor, tente outro termo de busca.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">Faça o download da região onde está pesquisando ou tente adicionar o nome de uma cidade ou povoado ao redor.</string>
 	<string name="search_history_title">Histórico de busca</string>
 	<string name="search_history_text">Visualizar as buscas recentes.</string>
 	<string name="clear_search">Limpar histórico de pesquisa</string>
@@ -751,6 +753,13 @@
 	<string name="website_menu">Link do cardápio</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">Exibir menu</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">Autoatendimento</string>
+	<string name="select_option">Selecionar opção</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">Desativar o modo de economia de energia</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">Para obter uma navegação mais precisa, recomendamos que você desative o modo de economia de energia nas configurações de bateria do telefone.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Endereço/Bloco</string>
@@ -1831,4 +1840,8 @@
 	<string name="type.piste_type.skitour">Trilha de esqui de passeio</string>
 	<string name="type.amenity.events_venue">Local do evento</string>
 	<string name="type.shop.collector">Colecionáveis</string>
+	<string name="type.self_service.yes">Autoatendimento disponível</string>
+	<string name="type.self_service.only">Somente autoatendimento</string>
+	<string name="type.self_service.partially">Autoatendimento parcial</string>
+	<string name="type.self_service.no">Sem autoatendimento</string>
 </resources>

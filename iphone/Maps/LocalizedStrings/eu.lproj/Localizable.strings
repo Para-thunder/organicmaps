@@ -185,17 +185,11 @@
 /* resource for context menu */
 "edit" = "Editatu";
 
-/* Warning message when doing search around current position */
-"unknown_current_position" = "Zure kokapena ez da oraindik zehaztu";
-
 /* Subject for emailed bookmark */
 "bookmark_share_email_subject" = "Begiratu nire markagailua Organic Maps mapan!";
 
 /* Subject for emailed position */
 "my_position_share_email_subject" = "Ikusi nire uneko kokapena Organic Maps mapan!";
-
-/* Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. */
-"share" = "Partekatu";
 
 /* Share by email button text, also used in editor and About. */
 "email" = "Posta elektronikoa";
@@ -217,8 +211,6 @@
 
 /* Length of track in cell that describes route */
 "length" = "Luzera";
-
-"share_my_location" = "Partekatu nire kokapena";
 
 "prefs_group_route" = "Nabigazioa";
 
@@ -540,7 +532,8 @@
 
 "search_not_found" = "Barkatu, ez dut ezer aurkitu.";
 
-"search_not_found_query" = "Saiatu bilaketa-irizpideak aldatzen.";
+/* The message when user did not find anything in the search. */
+"search_not_found_query" = "Deskargatu bilatzen ari zaren eskualdea edo saiatu inguruko herri/herri izena gehitzen.";
 
 "search_history_title" = "Bilaketa historia";
 
@@ -1130,6 +1123,10 @@
 "dialog_routing_rebuild_from_current_location_carplay" = "Ibilbidea zure uneko kokapenetik birkalkulatuko da";
 
 "dialog_routing_rebuild_for_vehicle_carplay" = "Ibilbidea auto modura aldatuko da";
+
+"not_all_shown_bookmarks_carplay" = "Ez dira laster-marka guztiak erakusten";
+
+"switch_to_phone_bookmarks_carplay" = "Aldatu telefonora laster-mark guztiak ikusteko";
 
 "ok" = "Ados";
 
@@ -3863,7 +3860,7 @@
 
 "type.tourism.theme_park" = "Parke tematiko";
 
-"type.tourism.viewpoint" = "Bista panoramikoa";
+"type.tourism.viewpoint" = "Begiratokia";
 
 /* Typically more basic, not staffed and free (compared to alpine_hut). */
 "type.tourism.wilderness_hut" = "Kabina";

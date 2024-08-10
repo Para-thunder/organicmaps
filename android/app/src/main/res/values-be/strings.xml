@@ -380,6 +380,7 @@
 	<string name="dialog_routing_system_error">Памылка сістэмы</string>
 	<string name="dialog_routing_application_error">Не ўдалося пракласці маршрут з-за памылкі праграмы.</string>
 	<string name="dialog_routing_try_again">Паспрабуйце зноў</string>
+	<string name="not_now">Не зараз</string>
 	<string name="dialog_routing_download_and_build_cross_route">Спампаваць мапу і пракласці лепшы маршрут праз некалькі мап?</string>
 	<string name="dialog_routing_download_cross_route">Спампаваць дадатковыя мапы, каб пракласці лепшы маршрут, які перасякае межы гэтай мапы.</string>
 
@@ -393,7 +394,8 @@
 	<string name="categories">Катэгорыі</string>
 	<string name="history">Гісторыя</string>
 	<string name="search_not_found">Нічога не знойдзена.</string>
-	<string name="search_not_found_query">Паспрабуйце змяніць крытэрыі пошуку.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">Спампуйце рэгіён, у якім вы шукаеце, або паспрабуйце дадаць назву бліжэйшага горада/вёскі.</string>
 	<string name="search_history_title">Гісторыя пошуку</string>
 	<string name="search_history_text">Праглядзець свае апошнія пошукі.</string>
 	<string name="clear_search">Ачысціць гісторыю пошуку</string>
@@ -446,6 +448,8 @@
 	<string name="no_osm_account">Не зарэгістраваныя на OpenStreetMap?</string>
 	<string name="register_at_openstreetmap">Зарэгістравацца на OpenStreetMap</string>
 	<string name="login">Увайсці</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">Не ўвайшлі ў сістэму</string>
 	<string name="login_osm">Увайсці ў OpenStreetMap</string>
 	<string name="password">Пароль</string>
 	<string name="forgot_password">Забылі пароль?</string>
@@ -812,6 +816,15 @@
 	<string name="website_menu">Спасылка на меню</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">Паглядзець меню</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">Самаабслугоўванне</string>
+	<string name="select_option">Выберыце варыянт</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">Месцы на адкрытым паветры</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">Выключыць рэжым энергазберажэння</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">Для найбольш дакладнай навігацыі рэкамендуем адключыць рэжым энергазберажэння ў наладах батарэі тэлефона.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Адрас/Блок</string>
@@ -1387,4 +1400,8 @@
 	<string name="type.amenity.events_venue">Месца правядзення мерапрыемстваў</string>
 	<string name="type.shop.auction">Аўкцыён</string>
 	<string name="type.shop.collector">Калекцыйныя прадметы</string>
+	<string name="type.self_service.yes">Маецца самаабслугоўванне</string>
+	<string name="type.self_service.only">Толькі самаабслугоўванне</string>
+	<string name="type.self_service.partially">Частковае самаабслугоўванне</string>
+	<string name="type.self_service.no">Няма самаабслугоўвання</string>
 </resources>

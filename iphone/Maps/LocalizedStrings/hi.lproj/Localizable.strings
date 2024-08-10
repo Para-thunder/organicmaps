@@ -185,17 +185,11 @@
 /* resource for context menu */
 "edit" = "संपादन करना";
 
-/* Warning message when doing search around current position */
-"unknown_current_position" = "आपका स्थान अभी तक निर्धारित नहीं किया गया है";
-
 /* Subject for emailed bookmark */
 "bookmark_share_email_subject" = "अरे, ऑर्गेनिक मैप्स में मेरा पिन देखें!";
 
 /* Subject for emailed position */
 "my_position_share_email_subject" = "अरे, ऑर्गेनिक मैप मानचित्र पर मेरा वर्तमान स्थान देखें!";
-
-/* Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. */
-"share" = "साझा करें";
 
 /* Share by email button text, also used in editor and About. */
 "email" = "ईमेल";
@@ -217,8 +211,6 @@
 
 /* Length of track in cell that describes route */
 "length" = "लंबाई";
-
-"share_my_location" = "मेरा स्थान साझा करें";
 
 "prefs_group_route" = "मार्गदर्शन";
 
@@ -540,7 +532,8 @@
 
 "search_not_found" = "उफ़, कोई परिणाम नहीं मिला.";
 
-"search_not_found_query" = "अपना खोज मानदण्ड बदलने का प्रयास करें।";
+/* The message when user did not find anything in the search. */
+"search_not_found_query" = "उस क्षेत्र को डाउनलोड करें जहां आप खोज रहे हैं या पास के शहर/गांव का नाम जोड़ने का प्रयास करें।";
 
 "search_history_title" = "खोज इतिहास";
 
@@ -1130,6 +1123,10 @@
 "dialog_routing_rebuild_from_current_location_carplay" = "मार्ग आपके वर्तमान स्थान से फिर से बनाया जाएगा";
 
 "dialog_routing_rebuild_for_vehicle_carplay" = "मार्ग को ऑटोमोबाइल में परिवर्तित किया जाएगा";
+
+"not_all_shown_bookmarks_carplay" = "सभी बुकमार्क नहीं दिखाए गए हैं";
+
+"switch_to_phone_bookmarks_carplay" = "सभी बुकमार्क देखने के लिए फ़ोन पर स्विच करें";
 
 "ok" = "ठीक है";
 

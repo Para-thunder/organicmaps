@@ -360,6 +360,7 @@
 	<string name="dialog_routing_system_error">Systemfel</string>
 	<string name="dialog_routing_application_error">Kan inte skapa väg på grund av ett programfel.</string>
 	<string name="dialog_routing_try_again">Försök igen</string>
+	<string name="not_now">Inte nu</string>
 	<string name="dialog_routing_download_and_build_cross_route">Vill du ladda ned kartan och skapa en optimalare väg som sträcker sig över fler än en karta?</string>
 	<string name="dialog_routing_download_cross_route">Ladda ned kartan för att skapa en optimalare väg som sträcker sig utanför den här kartan.</string>
 
@@ -373,7 +374,8 @@
 	<string name="categories">Kategorier</string>
 	<string name="history">Historik</string>
 	<string name="search_not_found">Ledsen, jag hittade ingenting.</string>
-	<string name="search_not_found_query">Försök med en annan sökförfrågan.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">Ladda ner den region där du söker eller försök att lägga till ett närliggande stads- eller bynamn.</string>
 	<string name="search_history_title">Sökhistorik</string>
 	<string name="search_history_text">Få snabbare åtkomst till senaste sökförfrågan.</string>
 	<string name="clear_search">Rensa sökhistorik</string>
@@ -422,6 +424,8 @@
 	<string name="no_osm_account">Inget konto hos OpenStreetMap?</string>
 	<string name="register_at_openstreetmap">Registrera</string>
 	<string name="login">Logga in</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">Inte inloggad</string>
 	<string name="login_osm">Logga in på OpenStreetMap</string>
 	<string name="password">Lösenord</string>
 	<string name="forgot_password">Glömt lösenord?</string>
@@ -772,6 +776,15 @@
 	<string name="website_menu">Länk till meny</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">Visa meny</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">Självbetjäning</string>
+	<string name="select_option">Välj alternativ</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">Sittplatser utomhus</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">Stäng av energisparläget</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">För att få den mest exakta navigeringen rekommenderar vi att du avaktiverar energisparläget i telefonens batteriinställningar.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Adress/Block</string>
@@ -1894,4 +1907,8 @@
 	<string name="type.amenity.events_venue">Evenemangslokal</string>
 	<string name="type.shop.auction">Auktion</string>
 	<string name="type.shop.collector">Samlingsföremål</string>
+	<string name="type.self_service.yes">Självbetjäning tillgänglig</string>
+	<string name="type.self_service.only">Endast självbetjäning</string>
+	<string name="type.self_service.partially">Delvis självbetjäning</string>
+	<string name="type.self_service.no">Ingen självbetjäning</string>
 </resources>

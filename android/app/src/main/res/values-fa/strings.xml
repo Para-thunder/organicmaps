@@ -355,6 +355,7 @@
 	<string name="dialog_routing_system_error">خطای سیستم</string>
 	<string name="dialog_routing_application_error">ناتوان در ایجاد مسیر به علت خطای برنامه.</string>
 	<string name="dialog_routing_try_again">لطفا دوباره تلاش کنید</string>
+	<string name="not_now">اکنون خیر</string>
 	<string name="dialog_routing_download_and_build_cross_route">ایا مایل به دانلود نقشه و ایجاد مسیر‌های بهینه بیشتری که نقشه‌های بیشتری را پوشش میدهد هستید؟</string>
 	<string name="dialog_routing_download_cross_route">دانلود نقشه‌های اضافی برای ایجاد مسیری بهتر که حاشیه‌های این نقشه را رد می کند.</string>
 
@@ -368,7 +369,8 @@
 	<string name="categories">دسته‌بندی‌ها</string>
 	<string name="history">تاریخچه</string>
 	<string name="search_not_found">متاسفانه چیزی پیدا نشد</string>
-	<string name="search_not_found_query">با تغییر در معیار‌های جستجو دوباره امتحان کنید</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">منطقه ای را که در آن جستجو می کنید دانلود کنید یا نام شهر/ روستای اطراف را اضافه کنید.</string>
 	<string name="search_history_title">سوابق جستجو</string>
 	<string name="search_history_text">مشاهده جستجو‌های اخیر</string>
 	<string name="clear_search">پاک کردن سابقه جستجوها</string>
@@ -419,6 +421,8 @@
 	<string name="no_osm_account">آیا حساب OpenStreetMap ندارید؟</string>
 	<string name="register_at_openstreetmap">ثبت نام در OpenStreetMap</string>
 	<string name="login">ورود</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">وارد نشده‌اید</string>
 	<string name="login_osm">شوید OpenStreetMap وارد</string>
 	<string name="password">رمز عبور</string>
 	<string name="forgot_password">رمز عبور خود را فراموش کردید؟</string>
@@ -775,6 +779,15 @@
 	<string name="website_menu">لینک منو</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">مشاهده منو</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">سلف سرویس</string>
+	<string name="select_option">گزینه را انتخاب کنید</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">نشستن در فضای باز</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">خاموش کردن حالت صرفه‌جویی در مصرف انرژی</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">برای دقیقu200cترین ناوبری، توصیه میu200cکنیم حالت صرفهu200cجویی در مصرف انرژی را در تنظیمات باتری گوشی غیرفعال کنید.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">آدرس/بلاک</string>
@@ -1820,4 +1833,8 @@
 	<string name="type.amenity.events_venue">محل برگزاری رویدادها</string>
 	<string name="type.shop.auction">حراج</string>
 	<string name="type.shop.collector">کلکسیونی ها</string>
+	<string name="type.self_service.yes">سلف سرویس در دسترس است</string>
+	<string name="type.self_service.only">فقط سلف سرویس</string>
+	<string name="type.self_service.partially">سلف سرویس جزئی</string>
+	<string name="type.self_service.no">بدون سلف سرویس</string>
 </resources>

@@ -185,17 +185,11 @@
 /* resource for context menu */
 "edit" = "Wijzig";
 
-/* Warning message when doing search around current position */
-"unknown_current_position" = "Je locatie is nog niet vastgesteld";
-
 /* Subject for emailed bookmark */
 "bookmark_share_email_subject" = "Hey, bekijk mijn pin op Organic Maps!";
 
 /* Subject for emailed position */
 "my_position_share_email_subject" = "Hey, bekijk mijn huidige locatie op Organic Maps!";
-
-/* Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. */
-"share" = "Deel";
 
 /* Share by email button text, also used in editor and About. */
 "email" = "E-mail";
@@ -217,8 +211,6 @@
 
 /* Length of track in cell that describes route */
 "length" = "Lengte";
-
-"share_my_location" = "Deel mijn locatie";
 
 "prefs_group_route" = "Navigatie";
 
@@ -540,7 +532,8 @@
 
 "search_not_found" = "Sorry, geen resultaten gevonden.";
 
-"search_not_found_query" = "Probeer een andere zoekopdracht.";
+/* The message when user did not find anything in the search. */
+"search_not_found_query" = "Download de regio waar u zoekt of probeer een nabijgelegen stad/dorpnaam toe te voegen.";
 
 "search_history_title" = "Zoekgeschiedenis";
 
@@ -1130,6 +1123,10 @@
 "dialog_routing_rebuild_from_current_location_carplay" = "De route wordt opnieuw berekend vanaf uw huidige locatie";
 
 "dialog_routing_rebuild_for_vehicle_carplay" = "De route wordt veranderd naar een autoroute";
+
+"not_all_shown_bookmarks_carplay" = "Niet alle bladwijzers worden getoond";
+
+"switch_to_phone_bookmarks_carplay" = "Schakel over naar de telefoon om alle bladwijzers te zien";
 
 "ok" = "Oké";
 

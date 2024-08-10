@@ -394,6 +394,7 @@
 	<string name="dialog_routing_system_error">خطأ في النظام</string>
 	<string name="dialog_routing_application_error">تعذر إنشاء مسار نتيجة وجود خطأ في التطبيق.</string>
 	<string name="dialog_routing_try_again">الرجاء إعادة المحاولة</string>
+	<string name="not_now">ليس الآن</string>
 	<string name="dialog_routing_download_and_build_cross_route">هل ترغب في تنزيل الخريطة وإنشاء مسار أفضل يمتد عبر أكثر من خريطة؟</string>
 	<string name="dialog_routing_download_cross_route">تنزيل خرائط إضافية لإنشاء مسار أفضل يعبر حافة هذه الخريطة.</string>
 
@@ -407,7 +408,8 @@
 	<string name="categories">التصنيفات</string>
 	<string name="history">سجل البحث</string>
 	<string name="search_not_found">المعذرة، لم أعثر على أية نتائج.</string>
-	<string name="search_not_found_query">يرجى تجربة معاير بحث أخرى.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">قم بتنزيل المنطقة التي تبحث فيها أو حاول إضافة اسم بلدة/قرية قريبة.</string>
 	<string name="search_history_title">سجل البحث</string>
 	<string name="search_history_text">عرض عمليات البحث الأخيرة.</string>
 	<string name="clear_search">مسح سجل البحث</string>
@@ -460,6 +462,8 @@
 	<string name="no_osm_account">ليس لديك حساب في خريطة الشارع المفتوحة؟</string>
 	<string name="register_at_openstreetmap">التسجيل في خريطة الشارع المفتوحة</string>
 	<string name="login">تسجيل الدخول</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">لم يتم تسجيل الدخول</string>
 	<string name="login_osm">تسجيل الدخول الى OpenStreetMap</string>
 	<string name="password">كلمة المرور</string>
 	<string name="forgot_password">هل نسيت كلمة المرور؟</string>
@@ -832,6 +836,15 @@
 	<string name="website_menu">رابط القائمة</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">عرض القائمة</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">الخدمة الذاتية</string>
+	<string name="select_option">حدد الخيار</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">مقاعد خارجية</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">إيقاف تشغيل وضع توفير الطاقة</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">للحصول على التنقل الأكثر دقة، نوصي بتعطيل وضع توفير الطاقة في إعدادات بطارية الهاتف.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">العنوان / البلوك</string>
@@ -2065,4 +2078,8 @@
 	<string name="type.amenity.events_venue">مكان الأحداث</string>
 	<string name="type.shop.auction">مزاد علني</string>
 	<string name="type.shop.collector">مقتنيات</string>
+	<string name="type.self_service.yes">الخدمة الذاتية متاحة</string>
+	<string name="type.self_service.only">الخدمة الذاتية فقط</string>
+	<string name="type.self_service.partially">خدمة ذاتية جزئية</string>
+	<string name="type.self_service.no">لا توجد خدمة ذاتية</string>
 </resources>

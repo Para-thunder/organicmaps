@@ -367,6 +367,7 @@
 	<string name="dialog_routing_system_error">Eroare de sistem</string>
 	<string name="dialog_routing_application_error">Crearea traseului a eșuat din cauza unei erori a aplicației.</string>
 	<string name="dialog_routing_try_again">Încearcă din nou</string>
+	<string name="not_now">Nu acum</string>
 	<string name="dialog_routing_download_and_build_cross_route">Vrei să descarci harta și să creezi un traseu mai bun care include mai multe hărți?</string>
 	<string name="dialog_routing_download_cross_route">Descarcă hărți suplimentare pentru a crea un traseu mai bun care să traverseze limitele acestei hărți.</string>
 
@@ -380,7 +381,8 @@
 	<string name="categories">Categorii</string>
 	<string name="history">Cronologie</string>
 	<string name="search_not_found">Nu s-a găsit nimic.</string>
-	<string name="search_not_found_query">Încearcă să modifici condițiile căutării.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">Descărcați regiunea în care căutați sau încercați să adăugați numele unei localități din apropiere.</string>
 	<string name="search_history_title">Istoricul căutărilor</string>
 	<string name="search_history_text">Arată căutările recente.</string>
 	<string name="clear_search">Șterge istoricul căutărilor</string>
@@ -433,6 +435,8 @@
 	<string name="no_osm_account">Nu ai un cont OpenStreetMap?</string>
 	<string name="register_at_openstreetmap">Înscrie-te</string>
 	<string name="login">Autentificare</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">Neautentificat</string>
 	<string name="login_osm">Conectați-vă la OpenStreetMap</string>
 	<string name="password">Parola</string>
 	<string name="forgot_password">Ai uitat parola?</string>
@@ -800,6 +804,15 @@
 	<string name="website_menu">Legătura de meniu</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">Vezi meniul</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">Autoservire</string>
+	<string name="select_option">Selectați opțiunea</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">Scaune în aer liber</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">Dezactivați modul de economisire a energiei</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">Pentru o navigare cât mai precisă, vă recomandăm să dezactivați modul de economisire a energiei în setările pentru baterie ale telefonului.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Adresă/Bloc</string>
@@ -1918,4 +1931,8 @@
 	<string name="type.amenity.events_venue">Locul de desfășurare a evenimentelor</string>
 	<string name="type.shop.auction">Licitație</string>
 	<string name="type.shop.collector">Colecții</string>
+	<string name="type.self_service.yes">Autoservire disponibilă</string>
+	<string name="type.self_service.only">Numai autoservire</string>
+	<string name="type.self_service.partially">Autoservire parțială</string>
+	<string name="type.self_service.no">Fără autoservire</string>
 </resources>

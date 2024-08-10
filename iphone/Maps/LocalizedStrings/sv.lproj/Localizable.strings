@@ -185,17 +185,11 @@
 /* resource for context menu */
 "edit" = "Redigera";
 
-/* Warning message when doing search around current position */
-"unknown_current_position" = "Din position har inte bestämts ännu";
-
 /* Subject for emailed bookmark */
 "bookmark_share_email_subject" = "Hej, kolla på min pin på Organic Maps kartan";
 
 /* Subject for emailed position */
 "my_position_share_email_subject" = "Hej, kolla på min nuvarande position på Organic Maps kartan!";
-
-/* Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. */
-"share" = "Dela";
 
 /* Share by email button text, also used in editor and About. */
 "email" = "E-post";
@@ -217,8 +211,6 @@
 
 /* Length of track in cell that describes route */
 "length" = "Längd";
-
-"share_my_location" = "Dela Min Plats";
 
 "prefs_group_route" = "Navigering";
 
@@ -540,7 +532,8 @@
 
 "search_not_found" = "Ledsen, jag hittade ingenting.";
 
-"search_not_found_query" = "Försök med en annan sökförfrågan.";
+/* The message when user did not find anything in the search. */
+"search_not_found_query" = "Ladda ner den region där du söker eller försök att lägga till ett närliggande stads- eller bynamn.";
 
 "search_history_title" = "Sökhistorik";
 
@@ -1130,6 +1123,10 @@
 "dialog_routing_rebuild_from_current_location_carplay" = "Ruten kommer att byggas om från din nuvarande plats";
 
 "dialog_routing_rebuild_for_vehicle_carplay" = "Ruten kommer att ändras till bil";
+
+"not_all_shown_bookmarks_carplay" = "Alla bokmärken visas inte";
+
+"switch_to_phone_bookmarks_carplay" = "Växla till telefonen för att se alla bokmärken";
 
 "ok" = "Ok";
 

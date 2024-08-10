@@ -373,6 +373,7 @@
 	<string name="dialog_routing_system_error">Süsteemi viga</string>
 	<string name="dialog_routing_application_error">Marsruuti ei saa koostada rakenduse vea tõttu.</string>
 	<string name="dialog_routing_try_again">Palun proovi uuesti</string>
+	<string name="not_now">Mitte praegu</string>
 	<string name="dialog_routing_download_and_build_cross_route">Kas sooviksid kaardi alla laadida ja luua optimaalsema rohkem kui ühte kaarti hõlmava marsruudi?</string>
 	<string name="dialog_routing_download_cross_route">Lae alla täiendavad kaardid, et luua parem, selle kaardi piire ületav marsruut.</string>
 
@@ -386,7 +387,8 @@
 	<string name="categories">Kategooriad</string>
 	<string name="history">Ajalugu</string>
 	<string name="search_not_found">Vabandust, tulemusi ei leitud.</string>
-	<string name="search_not_found_query">Proovi muuta otsingutingimusi.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">Laadige alla piirkond, kus te otsite, või proovige lisada lähedalasuva linna/küla nimi.</string>
 	<string name="search_history_title">Otsinguajalugu</string>
 	<string name="search_history_text">Vaata hiljutisi otsinguid.</string>
 	<string name="clear_search">Tühjenda otsinguajalugu</string>
@@ -439,6 +441,8 @@
 	<string name="no_osm_account">Puudub OpenStreetMap konto?</string>
 	<string name="register_at_openstreetmap">Registreeru</string>
 	<string name="login">Logi sisse</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">Pole sisse logitud</string>
 	<string name="login_osm">Logi sisse OpenStreetMap-i</string>
 	<string name="password">Salasõna</string>
 	<string name="forgot_password">Unustasid oma salasõna?</string>
@@ -811,6 +815,15 @@
 	<string name="website_menu">Menüü link</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">Menüü vaatamine</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">Iseteenindus</string>
+	<string name="select_option">Valige valik</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">Istekohad õues</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">Lülita välja energiasäästurežiim</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">Kõige täpsema navigeerimise tagamiseks soovitame telefoni aku seadetes energiasäästurežiimi välja lülitada.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Aadress/plokk</string>
@@ -2131,4 +2144,8 @@
 	<string name="type.amenity.events_venue">Ürituste toimumiskoht</string>
 	<string name="type.shop.auction">Oksjon</string>
 	<string name="type.shop.collector">Kollektsioneeritavad esemed</string>
+	<string name="type.self_service.yes">Iseteenindus saadaval</string>
+	<string name="type.self_service.only">Ainult iseteenindus</string>
+	<string name="type.self_service.partially">Osaline iseteenindus</string>
+	<string name="type.self_service.no">Iseteenindus puudub</string>
 </resources>

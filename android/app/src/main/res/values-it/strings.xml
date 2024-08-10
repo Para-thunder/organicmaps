@@ -367,6 +367,7 @@
 	<string name="dialog_routing_system_error">Errore di sistema</string>
 	<string name="dialog_routing_application_error">Impossibile creare il percorso a causa di un errore dell\'applicazione.</string>
 	<string name="dialog_routing_try_again">Riprova</string>
+	<string name="not_now">Non ora</string>
 	<string name="dialog_routing_download_and_build_cross_route">Vuoi scaricare la mappa e creare un percorso migliore che si estende su più mappe?</string>
 	<string name="dialog_routing_download_cross_route">Scarica altre mappe per creare un percorso migliore che attraversi i confini di questa mappa.</string>
 
@@ -380,7 +381,8 @@
 	<string name="categories">Categorie</string>
 	<string name="history">Cronologia</string>
 	<string name="search_not_found">Non ho trovato nulla.</string>
-	<string name="search_not_found_query">Prova con un\'altra ricerca.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">Scarichi la regione in cui sta effettuando la ricerca o provi ad aggiungere il nome di una città/villaggio vicino.</string>
 	<string name="search_history_title">Cronologia delle ricerche</string>
 	<string name="search_history_text">Visualizza le ricerche recenti.</string>
 	<string name="clear_search">Cancella сronologia ricerche</string>
@@ -433,6 +435,8 @@
 	<string name="no_osm_account">Non hai un account OpenStreetMap?</string>
 	<string name="register_at_openstreetmap">Iscriviti</string>
 	<string name="login">Accedi</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">Non sei connesso</string>
 	<string name="login_osm">Accedi a OpenStreetMap</string>
 	<string name="password">Password</string>
 	<string name="forgot_password">Hai dimenticato la password?</string>
@@ -805,6 +809,15 @@
 	<string name="website_menu">Link al menu</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">Visualizza menu</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">Self service</string>
+	<string name="select_option">Seleziona l\'opzione</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">Posti a sedere all\'aperto</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">Disattiva la modalità di risparmio energetico</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">Per una navigazione più accurata, ti consigliamo di disabilitare la modalità di risparmio energetico nelle impostazioni della batteria del telefono.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Indirizzo/Blocco</string>
@@ -2076,4 +2089,8 @@
 	<string name="type.amenity.events_venue">Sede degli eventi</string>
 	<string name="type.shop.auction">Asta</string>
 	<string name="type.shop.collector">Oggetti da collezione</string>
+	<string name="type.self_service.yes">Disponibile in self-service</string>
+	<string name="type.self_service.only">Solo self-service</string>
+	<string name="type.self_service.partially">Self-service parziale</string>
+	<string name="type.self_service.no">Nessun self-service</string>
 </resources>

@@ -379,6 +379,7 @@
 	<string name="dialog_routing_system_error">Systémová chyba</string>
 	<string name="dialog_routing_application_error">Nedá sa vytvoriť trasa z dôvodu aplikačnej chyby.</string>
 	<string name="dialog_routing_try_again">Skúste znova, prosím</string>
+	<string name="not_now">Nie teraz</string>
 	<string name="dialog_routing_download_and_build_cross_route">Chcete si prevziať mapu a vytvoriť optimálnejšiu trasu, ktorá si vyžaduje viac ako jednu mapu?</string>
 	<string name="dialog_routing_download_cross_route">Prevezmite si mapu na vytvorenie optimálnejšej trasy, ktorá prekračuje okraje tejto mapy.</string>
 
@@ -392,7 +393,8 @@
 	<string name="categories">Kategórie</string>
 	<string name="history">Archív</string>
 	<string name="search_not_found">Ľutujeme, ale nič sme nenašli.</string>
-	<string name="search_not_found_query">Vyskúšajte, prosím, iný hľadaný výraz.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">Stiahnite si región, v ktorom hľadáte, alebo skúste pridať názov blízkeho mesta/obce.</string>
 	<string name="search_history_title">História vyhľadávania</string>
 	<string name="search_history_text">Rýchlo pristupujte k nedávnym hľadaným výrazom.</string>
 	<string name="clear_search">Vymazať históriu vyhľadávania</string>
@@ -445,6 +447,8 @@
 	<string name="no_osm_account">Nemáte účet v OpenStreetMap?</string>
 	<string name="register_at_openstreetmap">Zaregistrovať sa</string>
 	<string name="login">Prihlásiť sa</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">Nie ste prihlásený</string>
 	<string name="login_osm">Prihláste sa do OpenStreetMap</string>
 	<string name="password">Heslo</string>
 	<string name="forgot_password">Zabudli ste heslo?</string>
@@ -814,6 +818,15 @@
 	<string name="website_menu">Odkaz na menu</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">Zobraziť menu</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">Samoobslužné služby</string>
+	<string name="select_option">Vyberte možnosť</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">Vonkajšie sedenie</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">Vypnúť režim úspory energie</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">Pre čo najpresnejšiu navigáciu odporúčame vypnúť režim úspory energie v nastaveniach batérie telefónu.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Adresa/blok</string>
@@ -2092,4 +2105,8 @@
 	<string name="type.amenity.events_venue">Miesto konania podujatí</string>
 	<string name="type.shop.auction">Aukcia</string>
 	<string name="type.shop.collector">Zberateľské predmety</string>
+	<string name="type.self_service.yes">K dispozícii je samoobsluha</string>
+	<string name="type.self_service.only">Len samoobslužné služby</string>
+	<string name="type.self_service.partially">Čiastočná samoobsluha</string>
+	<string name="type.self_service.no">Žiadna samoobsluha</string>
 </resources>

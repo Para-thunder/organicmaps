@@ -38,9 +38,6 @@ import androidx.core.app.NavUtils;
 import androidx.core.os.BundleCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-
-import com.google.android.material.snackbar.Snackbar;
-
 import app.organicmaps.BuildConfig;
 import app.organicmaps.MwmActivity;
 import app.organicmaps.MwmApplication;
@@ -48,6 +45,7 @@ import app.organicmaps.R;
 import app.organicmaps.util.concurrency.UiThread;
 import app.organicmaps.util.log.Logger;
 import app.organicmaps.util.log.LogsManager;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -627,6 +625,17 @@ public class Utils
   private static String getLocalizedFeatureByKey(@NonNull Context context, @NonNull String key)
   {
     return getStringValueByKey(context, key);
+  }
+
+  @Keep
+  @SuppressWarnings("unused")
+  @NonNull
+  public static String getTagValueLocalized(@NonNull Context context, @Nullable String tagKey, @Nullable String value)
+  {
+    if (TextUtils.isEmpty(tagKey) || TextUtils.isEmpty(value))
+      return "";
+
+    return getLocalizedFeatureType(context, tagKey + "-" + value);
   }
 
   // Called from JNI.

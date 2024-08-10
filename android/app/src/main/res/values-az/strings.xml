@@ -381,6 +381,7 @@
 	<string name="dialog_routing_system_error">Sistem xətası</string>
 	<string name="dialog_routing_application_error">Tətbiq xətası səbəbindən marşrut yaratmaq mümkün olmadı.</string>
 	<string name="dialog_routing_try_again">Zəhmət olmasa bir daha cəhd edin</string>
+	<string name="not_now">İndi yox</string>
 	<string name="dialog_routing_download_and_build_cross_route">Xəritəni endirmək və çoxsaylı xəritələr arasında daha rahat marşrut yaratmaq istərdinizmi?</string>
 	<string name="dialog_routing_download_cross_route">Bu xəritənin sərhədlərini keçən daha rahat marşrut yaratmaq üçün xəritəni endirin.</string>
 
@@ -394,7 +395,8 @@
 	<string name="categories">Kateqoriyalar</string>
 	<string name="history">Keçmiş</string>
 	<string name="search_not_found">Üzr istəyirik, heç bir nəticə tapılmadı.</string>
-	<string name="search_not_found_query">Axtarış kriteriyalarınızı dəyişməyə cəhd edin.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">Axtardığınız bölgəni endirin və ya yaxınlıqdakı şəhər/kənd adını əlavə etməyə cəhd edin.</string>
 	<string name="search_history_title">Axtarış tarixçəsi</string>
 	<string name="search_history_text">Son axtarışlara baxın.</string>
 	<string name="clear_search">Axtarış Tarixçəsini silin</string>
@@ -447,6 +449,8 @@
 	<string name="no_osm_account">OpenStreetMap hesabınız yoxdur?</string>
 	<string name="register_at_openstreetmap">OpenStreetMap üçün qeydiyyatdan keçin</string>
 	<string name="login">Daxil ol</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">Giriş edilməyib</string>
 	<string name="login_osm">OpenStreetMap-a daxil olun</string>
 	<string name="password">Parol</string>
 	<string name="forgot_password">Parolu unutmusunuz?</string>
@@ -801,6 +805,15 @@
 	<string name="website_menu">Menyu keçidi</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">Menyuya baxın</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">Özünəxidmət</string>
+	<string name="select_option">Seçim seçin</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">Çöldə oturma</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">Enerjiyə qənaət rejimini söndürün</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">Ən dəqiq naviqasiya üçün telefonun batareya parametrlərində enerjiyə qənaət rejimini söndürməyi tövsiyə edirik.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Ünvan/Blok</string>
@@ -2087,4 +2100,8 @@
 	<string name="type.amenity.events_venue">Tədbir yeri</string>
 	<string name="type.shop.auction">Hərrac</string>
 	<string name="type.shop.collector">Kolleksiya əşyaları</string>
+	<string name="type.self_service.yes">Özünə xidmət mövcuddur</string>
+	<string name="type.self_service.only">Yalnız özünə xidmət</string>
+	<string name="type.self_service.partially">Qismən özünəxidmət</string>
+	<string name="type.self_service.no">Özünə xidmət yoxdur</string>
 </resources>

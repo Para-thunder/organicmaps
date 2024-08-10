@@ -381,6 +381,7 @@
 	<string name="dialog_routing_system_error">Sistemaren errorea</string>
 	<string name="dialog_routing_application_error">Ibilbidea ezin izan da sortu aplikazioaren errore baten ondorioz.</string>
 	<string name="dialog_routing_try_again">Saiatu berriro</string>
+	<string name="not_now">Orain ez</string>
 	<string name="dialog_routing_download_and_build_cross_route">Mapa deskargatu eta mapa bat baino gehiago hartzen duen ibilbide hobe bat sortu nahi duzu?</string>
 	<string name="dialog_routing_download_cross_route">Deskargatu mapa osagarriak mapa honen mugak gainditzen dituen ibilbide hobea sortzeko.</string>
 
@@ -394,7 +395,8 @@
 	<string name="categories">Kategoriak</string>
 	<string name="history">Historiala</string>
 	<string name="search_not_found">Barkatu, ez dut ezer aurkitu.</string>
-	<string name="search_not_found_query">Saiatu bilaketa-irizpideak aldatzen.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">Deskargatu bilatzen ari zaren eskualdea edo saiatu inguruko herri/herri izena gehitzen.</string>
 	<string name="search_history_title">Bilaketa historia</string>
 	<string name="search_history_text">Ikusi azken bilaketak.</string>
 	<string name="clear_search">Garbitu bilaketa historia</string>
@@ -445,6 +447,8 @@
 	<string name="no_osm_account">Ez al duzu OpenStreetMap konturik?</string>
 	<string name="register_at_openstreetmap">Eman izena OpenStreetMap-en</string>
 	<string name="login">Saioa hasi</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">Ez zaude saiatuta</string>
 	<string name="login_osm">Hasi saioa OpenStreetMap-en</string>
 	<string name="password">Pasahitza</string>
 	<string name="forgot_password">Pasahitza ahaztu duzu?</string>
@@ -819,6 +823,15 @@
 	<string name="website_menu">Menuaren esteka</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">Ikusi menua</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">Autozerbitzu</string>
+	<string name="select_option">Hautatu aukera</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">Kanpoko eserlekuak</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">Desaktibatu energia aurrezteko modua</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">Nabigazio zehatzena lortzeko, telefonoaren bateriaren ezarpenetan energia aurrezteko modua desgaitzea gomendatzen dugu.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Helbidea/Blokea</string>
@@ -1975,7 +1988,7 @@
 	<string name="type.tourism.museum">Museoa</string>
 	<string name="type.tourism.picnic_site">Piknika</string>
 	<string name="type.tourism.theme_park">Parke tematiko</string>
-	<string name="type.tourism.viewpoint">Bista panoramikoa</string>
+	<string name="type.tourism.viewpoint">Begiratokia</string>
 	<!-- Typically more basic, not staffed and free (compared to alpine_hut). -->
 	<string name="type.tourism.wilderness_hut">Kabina</string>
 	<string name="type.tourism.zoo.petting">Petting Zoo</string>
@@ -2002,4 +2015,8 @@
 	<string name="type.amenity.events_venue">Ekitaldien Lekua</string>
 	<string name="type.shop.auction">Enkantea</string>
 	<string name="type.shop.collector">Bildumagarriak</string>
+	<string name="type.self_service.yes">Autozerbitzua eskuragarri</string>
+	<string name="type.self_service.only">Autozerbitzua soilik</string>
+	<string name="type.self_service.partially">Autozerbitzu partziala</string>
+	<string name="type.self_service.no">Autozerbitzurik ez</string>
 </resources>

@@ -383,6 +383,7 @@
 	<string name="dialog_routing_system_error">Järjestelmävirhe</string>
 	<string name="dialog_routing_application_error">Reittiä ei voi luoda sovellusvirheen vuoksi.</string>
 	<string name="dialog_routing_try_again">Yritä uudelleen</string>
+	<string name="not_now">Ei nyt</string>
 	<string name="dialog_routing_download_and_build_cross_route">Haluatko ladata kartan ja luoda paremman reitin, joka ulottuu usealle kartalle?</string>
 	<string name="dialog_routing_download_cross_route">Lataa kartta ja luo parempi reitti, joka ylittää tämän kartan reunan.</string>
 
@@ -396,7 +397,8 @@
 	<string name="categories">Luokat</string>
 	<string name="history">Historia</string>
 	<string name="search_not_found">Pahoittelut, hakutuloksia ei ole.</string>
-	<string name="search_not_found_query">Yritä jotain toista hakusanaa.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">Lataa alue, jolta etsit, tai yritä lisätä läheisen kaupungin tai kylän nimi.</string>
 	<string name="search_history_title">Hakuhistoria</string>
 	<string name="search_history_text">Näytä viimeaikaiset hakusi.</string>
 	<string name="clear_search">Poista hakuhistoria</string>
@@ -449,6 +451,8 @@
 	<string name="no_osm_account">Eikö sinulla ole OpenStreetMap-tiliä?</string>
 	<string name="register_at_openstreetmap">Rekisteröidy</string>
 	<string name="login">Kirjaudu sisään</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">Et ole kirjautunut sisään</string>
 	<string name="login_osm">Kirjaudu OpenStreetMapiin</string>
 	<string name="password">Salasana</string>
 	<string name="forgot_password">Unohtuiko salasana?</string>
@@ -822,6 +826,15 @@
 	<string name="website_menu">Valikkolinkki</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">Näytä valikko</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">Itsepalvelu</string>
+	<string name="select_option">Valitse vaihtoehto</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">Ulkona istuminen</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">Poista virransäästötila käytöstä</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">Jotta navigointi olisi mahdollisimman tarkkaa, suosittelemme virransäästötilan poistamista käytöstä puhelimen akkuasetuksista.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Osoite/lohko</string>
@@ -2057,4 +2070,8 @@
 	<string name="type.amenity.events_venue">Tapahtumapaikka</string>
 	<string name="type.shop.auction">Huutokauppa</string>
 	<string name="type.shop.collector">Keräilyesineet</string>
+	<string name="type.self_service.yes">Itsepalvelu saatavilla</string>
+	<string name="type.self_service.only">Vain itsepalvelu</string>
+	<string name="type.self_service.partially">Osittainen itsepalvelu</string>
+	<string name="type.self_service.no">Ei itsepalvelua</string>
 </resources>

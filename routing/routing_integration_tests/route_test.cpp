@@ -246,16 +246,16 @@ UNIT_TEST(CanadaBridgeCrossToEdwardIsland)
 UNIT_TEST(ParisCrossDestinationInForwardHeapCase)
 {
   // Forward.
-  // OM makes the same as OSRM and Valhalla. GraphHopper makes a detour via Goussainville (146km).
+  // Updated after fixing primary/trunk factors. Route looks good, but it differs from OSRM/Valhalla/GraphHopper.
   CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car),
       FromLatLon(49.85015, 2.24296), {0., 0.},
-      FromLatLon(48.85458, 2.36291), 132897);
+      FromLatLon(48.85458, 2.36291), 128749);
 
   // Backward.
   // OM makes the same as GraphHopper and Valhalla. OSRM makes a bit shorter route.
   CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car),
       FromLatLon(48.85458, 2.36291), {0., 0.},
-      FromLatLon(49.85027, 2.24283), 136652);
+      FromLatLon(49.85027, 2.24283), 136653);
 }
 
 UNIT_TEST(RussiaSmolenskRussiaMoscowTimeTest)
@@ -396,6 +396,7 @@ UNIT_TEST(TolyattiFeatureThatCrossSeveralMwmsTest)
   Route const & route = *routeResult.first;
 
   // GraphHopper and Valhalla agree here, but OSRM makes a short route via Syzran.
+  /// @todo Now like the OSRM short route, after updating primary/trunk factors.
   TestRouteLength(route, 166157);
   TestRouteTime(route, 7958.85);
 }
@@ -984,6 +985,35 @@ UNIT_TEST(Spain_NoMaxSpeeds_KeepTrunk_NotTrunkLink)
   CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car),
                                    FromLatLon(43.3773971, -3.43177355), {0., 0.},
                                    FromLatLon(43.3685773, -3.42580007), 1116.79);
+}
+
+// https://github.com/organicmaps/organicmaps/issues/8823
+UNIT_TEST(LATAM_UsePrimary_NotTrunkDetour)
+{
+  // 10247 or less should be here.
+  CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car),
+                                   FromLatLon(4.737768, -74.077599), {0., 0.},
+                                   FromLatLon(4.684999, -74.046393), 10247.3);
+
+  /// @todo Still have the strange detour at the end. Due to the 20/30 km/h assignment for the primary_link.
+  /// Looks like it is bad to assign maxspeed for _all_ connected links if it is defined for the middle one.
+}
+
+// https://github.com/organicmaps/organicmaps/issues/8729
+// https://github.com/organicmaps/organicmaps/issues/8541
+UNIT_TEST(USA_UseDirt_WithMaxspeed)
+{
+  CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car),
+                                   FromLatLon(46.5361985, -111.943183), {0., 0.},
+                                   FromLatLon(46.4925409, -112.105446), 20906.5);
+
+  CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car),
+                                   FromLatLon(46.7336967, -111.926), {0., 0.},
+                                   FromLatLon(46.7467037, -111.917147), 3527.79);
+
+  CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car),
+                                   FromLatLon(42.3889581, 19.7812567), {0., 0.},
+                                   FromLatLon(42.3878106, 19.7831402), 247.139);
 }
 
 } // namespace route_test

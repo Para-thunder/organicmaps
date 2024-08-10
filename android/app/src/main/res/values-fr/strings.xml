@@ -19,6 +19,7 @@
 	<string name="kilometres">Kilomètres</string>
 	<!-- Settings/Downloader - size string, only strings different from English should be translated -->
 	<string name="mb">Mo</string>
+	<string name="gb">Go</string>
 	<!-- Choose measurement on first launch alert - choose imperial system button -->
 	<string name="miles">Miles</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
@@ -383,6 +384,7 @@
 	<string name="dialog_routing_system_error">Erreur système</string>
 	<string name="dialog_routing_application_error">Impossible de créer l\'itinéraire à cause d\'une erreur dans l\'application.</string>
 	<string name="dialog_routing_try_again">Veuillez réessayer</string>
+	<string name="not_now">Pas maintenant</string>
 	<string name="dialog_routing_download_and_build_cross_route">Voulez-vous télécharger la carte et créer un itinéraire plus direct s\'étendant sur plus d\'une carte?</string>
 	<string name="dialog_routing_download_cross_route">Téléchargez des cartes pour créer un itinéraire plus direct sortant des limites de cette carte.</string>
 
@@ -396,7 +398,8 @@
 	<string name="categories">Catégories</string>
 	<string name="history">Historique</string>
 	<string name="search_not_found">Désolé, je n\'ai rien trouvé.</string>
-	<string name="search_not_found_query">Veuillez essayer un autre mot-clé.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">Téléchargez la région dans laquelle vous effectuez votre recherche ou essayez d\'ajouter le nom d\'une ville ou d\'un village proche.</string>
 	<string name="search_history_title">Historique de recherche</string>
 	<string name="search_history_text">Accédez rapidement aux dernières recherches.</string>
 	<string name="clear_search">Effacer l\'historique de recherche</string>
@@ -449,6 +452,8 @@
 	<string name="no_osm_account">Vous n\'avez pas de compte sur OpenStreetMap ?</string>
 	<string name="register_at_openstreetmap">S\'inscrire sur OpenStreetMap</string>
 	<string name="login">Connexion</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">Non connecté•e</string>
 	<string name="login_osm">Se connecter à OpenStreetMap</string>
 	<string name="password">Mot de passe</string>
 	<string name="forgot_password">Mot de passe oublié ?</string>
@@ -826,6 +831,15 @@
 	<string name="website_menu">Lien vers le menu</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">Voir le menu</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">Libre-service</string>
+	<string name="select_option">Sélectionner une option</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">Places en terrasse</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">Désactiver le mode économie d\'énergie</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">Pour une navigation plus précise, nous te recommandons de désactiver le mode d\'économie d\'énergie dans les paramètres de la batterie du téléphone.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Adresse/Bloc</string>
@@ -2086,4 +2100,8 @@
 	<string name="type.amenity.events_venue">Lieu des événements</string>
 	<string name="type.shop.auction">Vente aux enchères</string>
 	<string name="type.shop.collector">Objets de collection</string>
+	<string name="type.self_service.yes">Libre-service disponible</string>
+	<string name="type.self_service.only">En libre-service uniquement</string>
+	<string name="type.self_service.partially">En libre-service partiellement</string>
+	<string name="type.self_service.no">Pas en libre-service</string>
 </resources>

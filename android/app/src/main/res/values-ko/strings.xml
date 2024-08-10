@@ -362,6 +362,7 @@
 	<string name="dialog_routing_system_error">시스템 오류</string>
 	<string name="dialog_routing_application_error">애플리케이션 오류로 인해 경로를 설정하지 못했습니다.</string>
 	<string name="dialog_routing_try_again">다시 시도해주세요.</string>
+	<string name="not_now">나중에</string>
 	<string name="dialog_routing_download_and_build_cross_route">지도를 다운로드하여, 두 개 이상의 지도를 통과하는 더 최적화된 경로를 설정하시겠습니까?</string>
 	<string name="dialog_routing_download_cross_route">이 지도의 경계를 통과하는 더 최적화된 경로를 설정하려면 지도를 다운로드하세요.</string>
 
@@ -375,7 +376,8 @@
 	<string name="categories">범주</string>
 	<string name="history">내역</string>
 	<string name="search_not_found">죄송합니다. 아무것도 찾지 못했습니다.</string>
-	<string name="search_not_found_query">다른 쿼리를 시도하십시오.</string>
+	<!-- The message when user did not find anything in the search. -->
+	<string name="search_not_found_query">검색하려는 지역을 다운로드하거나 가까운 도시/마을 이름을 추가해 보세요.</string>
 	<string name="search_history_title">검색 기록</string>
 	<string name="search_history_text">최근 검색 쿼리에 신속하게 액세스할 수 있습니다.</string>
 	<string name="clear_search">이력 검색 지우기</string>
@@ -424,6 +426,8 @@
 	<string name="no_osm_account">OpenStreetMap에서 계정이 없습니까?</string>
 	<string name="register_at_openstreetmap">등록</string>
 	<string name="login">로그인</string>
+	<!-- Status message indicating that user did not login to OSM profile yet. -->
+	<string name="not_signed_in">로그인되지 않음</string>
 	<string name="login_osm">OpenStreetMap에 로그인</string>
 	<string name="password">암호</string>
 	<string name="forgot_password">암호를 잊으 셨나요?</string>
@@ -773,6 +777,15 @@
 	<string name="website_menu">메뉴 링크</string>
 	<!-- Button in the Place Page which opens a restaurant or other food place's menu in a browser -->
 	<string name="view_menu">메뉴 보기</string>
+	<!-- To indicate if the place proposed self service... -->
+	<string name="self_service">셀프 서비스</string>
+	<string name="select_option">옵션 선택</string>
+	<!-- To indicate if restaurant or other place has outdoor seating -->
+	<string name="outdoor_seating">야외 좌석</string>
+	<!-- Disclaimer title shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_title">절전 모드 해제</string>
+	<!-- Disclaimer summary shown when Power Saving Mode is enabled -->
+	<string name="power_save_dialog_summary">가장 정확한 내비게이션을 위해 휴대폰의 배터리 설정에서 절전 모드를 비활성화하는 것이 좋습니다.</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">주소/블록</string>
@@ -1910,4 +1923,8 @@
 	<string name="type.amenity.events_venue">행사장</string>
 	<string name="type.shop.auction">경매</string>
 	<string name="type.shop.collector">수집품</string>
+	<string name="type.self_service.yes">셀프 서비스 사용 가능</string>
+	<string name="type.self_service.only">셀프 서비스 전용</string>
+	<string name="type.self_service.partially">부분 셀프 서비스</string>
+	<string name="type.self_service.no">셀프 서비스 없음</string>
 </resources>

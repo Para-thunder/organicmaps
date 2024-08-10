@@ -185,17 +185,11 @@
 /* resource for context menu */
 "edit" = "Redaktə et";
 
-/* Warning message when doing search around current position */
-"unknown_current_position" = "Məkanınız hələ müəyyən edilməyib";
-
 /* Subject for emailed bookmark */
 "bookmark_share_email_subject" = "Salam, Organic Maps xəritəsində mənim pin kodumu yoxlayın!";
 
 /* Subject for emailed position */
 "my_position_share_email_subject" = "Hey, Organic Maps'da mənim hal-hazırda olduğum ünvana baxın!";
-
-/* Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. */
-"share" = "Paylaşın";
 
 /* Share by email button text, also used in editor and About. */
 "email" = "E-poçt";
@@ -217,8 +211,6 @@
 
 /* Length of track in cell that describes route */
 "length" = "Uzunluq";
-
-"share_my_location" = "Məkanımı Paylaşın";
 
 "prefs_group_route" = "Naviqasiya";
 
@@ -540,7 +532,8 @@
 
 "search_not_found" = "Üzr istəyirik, heç bir nəticə tapılmadı.";
 
-"search_not_found_query" = "Axtarış kriteriyalarınızı dəyişməyə cəhd edin.";
+/* The message when user did not find anything in the search. */
+"search_not_found_query" = "Axtardığınız bölgəni endirin və ya yaxınlıqdakı şəhər/kənd adını əlavə etməyə cəhd edin.";
 
 "search_history_title" = "Axtarış tarixçəsi";
 
@@ -1130,6 +1123,10 @@
 "dialog_routing_rebuild_from_current_location_carplay" = "Marşrut cari yerinizdən yenidən yaradılacaq";
 
 "dialog_routing_rebuild_for_vehicle_carplay" = "Marşrut sürücülük marşrutuna çevriləcək";
+
+"not_all_shown_bookmarks_carplay" = "Bütün əlfəcinlər göstərilmir";
+
+"switch_to_phone_bookmarks_carplay" = "Bütün əlfəcinləri görmək üçün telefona keçin";
 
 "ok" = "Yaxşı";
 
