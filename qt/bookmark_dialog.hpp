@@ -32,6 +32,7 @@ private slots:
   void OnImportClick();
   void OnExportClick();
   void OnDeleteClick();
+  void onRenameClick();  //Added renaming track slot
 
 private:
   void FillTree();

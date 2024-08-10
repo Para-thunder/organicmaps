@@ -40,6 +40,10 @@ BookmarkDialog::BookmarkDialog(QWidget * parent, Framework & framework)
   QPushButton * exportButton = new QPushButton(tr("Export KMZ"), this);
   connect(exportButton, &QAbstractButton::clicked, this, &BookmarkDialog::OnExportClick);
 
+    // Add the Rename button
+  QPushButton * renameButton = new QPushButton(tr("Rename"), this);
+  connect(renameButton, &QAbstractButton::clicked, this, &BookmarkDialog::OnRenameClick);
+
   m_tree = new QTreeWidget(this);
   m_tree->setColumnCount(2);
   QStringList columnLabels;
@@ -53,7 +57,9 @@ BookmarkDialog::BookmarkDialog(QWidget * parent, Framework & framework)
   horizontalLayout->addWidget(importButton);
   horizontalLayout->addWidget(exportButton);
   horizontalLayout->addWidget(deleteButton);
+   horizontalLayout->addWidget(renameButton); //Added rename button to the layout
   horizontalLayout->addWidget(closeButton);
+
 
   QVBoxLayout * verticalLayout = new QVBoxLayout();
   verticalLayout->addWidget(m_tree);
@@ -125,6 +131,38 @@ void BookmarkDialog::OnCloseClick()
 {
   done(0);
 }
+
+//Added rename track in bookmark function
+void BookmarkDialog::OnRenameClick()
+{
+  auto selectedItems = m_tree->selectedItems();
+  if (selectedItems.empty())
+  {
+    QMessageBox::warning(this, tr("Warning"), tr("Select a track to rename."));
+    return;
+  }
+
+  QTreeWidgetItem * selectedItem = selectedItems.front();
+  auto trackIt = m_tracks.find(selectedItem);
+  if (trackIt == m_tracks.end())
+  {
+    QMessageBox::warning(this, tr("Warning"), tr("Selected item is not a track."));
+    return;
+  }
+
+  bool ok;
+  QString newName = QInputDialog::getText(this, tr("Rename Track"),
+                                           tr("New track name:"), QLineEdit::Normal,
+                                           selectedItem->text(0), &ok);
+  
+  if (ok && !newName.isEmpty())
+  {
+    // Assuming there's a method to rename the track in the BookmarkManager
+    m_framework.GetBookmarkManager().GetEditSession().RenameTrack(trackIt->second, newName.toStdString());
+    FillTree();  // Refresh the tree view to reflect changes
+  }
+}
+
 
 void BookmarkDialog::OnImportClick()
 {
